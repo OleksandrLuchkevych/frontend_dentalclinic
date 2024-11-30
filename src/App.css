@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #f0f8ff, #e6f7ff); /* Світлий градієнтний фон */
+  color: #333;
+}
+
+.homepage-container {
+  text-align: center;
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  color: #007bff; /* Синій колір тексту для контрасту */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Легка тінь для тексту */
+}
+
+.homepage-title {
+  font-size: 2.5rem;
+  color: #007bff; /* Яскравий синій колір заголовка */
+}
+
+.homepage-subtitle {
+  font-size: 1.2rem;
+  color: #555; /* Сірий колір для підзаголовка */
+  margin-bottom: 40px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Загальний стиль для вершечка карток */
+.card {
+  border-top: 5px solid #007bff; /* Єдиний синій колір для вершечка */
+  background: #ffffff; /* Білий фон картки */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Видалено картинку іконки */
+.card-icon {
+  display: none; /* Забираємо іконки */
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  color: #007bff; /* Синій для заголовка картки */
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #777; /* Сірий для опису картки */
+}
+
+.card:nth-child(1) {
+  border-top: 5px solid #007bff;
+}
+
+.card:nth-child(2) {
+  border-top: 5px solid #007bff;
+}
+
+.card:nth-child(3) {
+  border-top: 5px solid #007bff;
+}
+
+.card:nth-child(4) {
+  border-top: 5px solid #007bff;
+}
+
+.card:nth-child(5) {
+  border-top: 5px solid #007bff;
+}

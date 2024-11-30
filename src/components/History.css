@@ -1,0 +1,108 @@
+/* Загальний контейнер */
+.history-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+}
+
+/* Заголовок */
+.history-header {
+    background-color: #e3f2fd;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.history-header h1 {
+    color: #0056b3;
+    margin-bottom: 15px;
+    font-size: 2.5em;
+}
+
+.history-header p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Пошук */
+.search-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.search-group {
+    text-align: left;
+    width: 100%;
+    max-width: 300px;
+}
+
+.search-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.search-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+.search-group input:focus {
+    border-color: #0077cc;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 119, 204, 0.3);
+}
+
+/* Список історії */
+.history-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.history-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    border-left: 6px solid #0077cc;
+}
+
+.history-item p {
+    margin: 8px 0;
+    font-size: 1em;
+    color: #333;
+}
+
+.history-item p strong {
+    font-weight: bold;
+    color: #0077cc;
+}
+
+.no-records {
+    color: #777;
+    font-size: 1.4em;
+    margin-top: 20px;
+}
+
+/* Адаптація */
+@media (max-width: 600px) {
+    .search-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

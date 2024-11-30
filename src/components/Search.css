@@ -1,0 +1,104 @@
+/* Загальний контейнер */
+.search-container {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #00a8cc, #70dbdb, #c1f2f2); /* Багатоколірний градієнт */
+    color: white;
+    min-height: 100vh;
+}
+
+/* Заголовок */
+.search-header {
+    background-color: rgba(255, 255, 255, 0.2);
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2)); /* Легкий градієнт */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.search-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Тінь для тексту */
+}
+
+.search-header p {
+    font-size: 1.2em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Форма пошуку */
+.search-form {
+    background: linear-gradient(135deg, #ffffff, #f0faff, #e6f8f8); /* Градієнт для форми */
+    color: #333;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: left;
+}
+
+/* Поля форми */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+    background: linear-gradient(90deg, #ffffff, #f8faff); /* Легкий градієнт */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #00a8cc;
+    box-shadow: 0 0 6px rgba(0, 168, 204, 0.5);
+    outline: none;
+}
+
+/* Кнопка пошуку */
+.search-btn {
+    background: linear-gradient(45deg, #00a8cc, #0088a3, #70dbdb); /* Яскравий градієнт */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-btn:hover {
+    background: linear-gradient(45deg, #0088a3, #70dbdb, #00a8cc);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Адаптація */
+@media (max-width: 600px) {
+    .search-form {
+        padding: 20px;
+    }
+
+    .search-header h1 {
+        font-size: 2em;
+    }
+}

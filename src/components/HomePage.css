@@ -1,0 +1,117 @@
+/* Загальний контейнер */
+.history-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    background-image: linear-gradient(135deg, #f9f9f9, #e1f5fe, #c8e6c9); /* Градієнтний фон */
+    min-height: 100vh;
+}
+
+/* Заголовок */
+.history-header {
+    background-color: #e3f2fd;
+    background-image: linear-gradient(90deg, #e3f2fd, #bbdefb, #b2dfdb); /* Блакитно-зелений градієнт */
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.history-header h1 {
+    color: #004ba0;
+    margin-bottom: 15px;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Тінь для тексту */
+}
+
+.history-header p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Пошук */
+.search-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.search-group {
+    text-align: left;
+    width: 100%;
+    max-width: 300px;
+}
+
+.search-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05); /* Тінь для тексту */
+}
+
+.search-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1em;
+    background-color: #fefefe;
+    background-image: linear-gradient(90deg, #ffffff, #f8fbff, #e0f7fa); /* Легкий градієнт у полях */
+    transition: border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-group input:focus {
+    border-color: #0077cc;
+    outline: none;
+    background-color: #f0f8ff;
+    box-shadow: 0 0 8px rgba(0, 119, 204, 0.3);
+}
+
+/* Список історії */
+.history-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.history-item {
+    background-color: #fff;
+    background-image: linear-gradient(135deg, #ffffff, #f3faff, #e8f5e9); /* Градієнт для елементів списку */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    border-left: 6px solid #0077cc;
+}
+
+.history-item p {
+    margin: 8px 0;
+    font-size: 1em;
+    color: #333;
+}
+
+.history-item p strong {
+    font-weight: bold;
+    color: #0077cc;
+}
+
+/* Стиль для відсутності записів */
+.no-records {
+    color: #777;
+    font-size: 1.4em;
+    margin-top: 20px;
+}
+
+/* Адаптація */
+@media (max-width: 600px) {
+    .search-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

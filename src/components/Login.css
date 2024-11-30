@@ -1,0 +1,136 @@
+/* Загальний контейнер */
+.login-container {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #0077cc, #00c4cc, #4dd0e1); /* Багатоколірний градієнт */
+    color: white;
+    min-height: 100vh;
+}
+
+/* Заголовок */
+.login-header {
+    background-color: rgba(255, 255, 255, 0.2);
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2)); /* Легкий градієнт */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.login-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Тінь для тексту */
+}
+
+.login-header p {
+    font-size: 1.2em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Форма */
+.login-form {
+    background: linear-gradient(135deg, #ffffff, #f1faff, #e0f7fa); /* Градієнт для форми */
+    color: #333;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: left;
+}
+
+/* Поля форми */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+    background: linear-gradient(90deg, #ffffff, #f8fbff); /* Легкий градієнт */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #00c4cc;
+    box-shadow: 0 0 6px rgba(0, 196, 204, 0.5);
+    outline: none;
+}
+
+/* Чекбокс */
+.form-group-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-group-checkbox input {
+    margin-right: 10px;
+}
+
+/* Кнопка */
+.login-btn {
+    background: linear-gradient(45deg, #0077cc, #00c4cc, #005fa3); /* Яскравий градієнт */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-btn:hover {
+    background: linear-gradient(45deg, #005fa3, #004080, #0077cc);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.login-footer {
+    margin-top: 20px;
+    font-size: 1em;
+}
+
+.login-footer a {
+    color: #2a586d;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.login-footer a:hover {
+    color: #00c4cc;
+    text-shadow: 0 0 4px rgba(0, 196, 204, 0.7);
+    text-decoration: underline;
+}
+
+/* Адаптація */
+@media (max-width: 600px) {
+    .login-form {
+        padding: 20px;
+    }
+
+    .login-header h1 {
+        font-size: 2em;
+    }
+
+    .login-footer {
+        font-size: 0.9em;
+    }
+}
